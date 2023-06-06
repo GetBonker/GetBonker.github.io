@@ -4,6 +4,7 @@ body {
   padding: 20px;
   text-align: center;
   color: #FFFFFF; /* White text color */
+  transition: background-color 0.3s ease-in-out;
 }
 
 h1 {
@@ -68,5 +69,8 @@ p {
 
 .twitter-link:hover {
   background-color: #000000; /* Black background color on Twitter button hover */
-  transition: background-color 0.3s ease-in-out;
+}
+
+.twitter-link:hover body {
+  background-color: #000000; /* Black background color on Twitter button hover */
 }
