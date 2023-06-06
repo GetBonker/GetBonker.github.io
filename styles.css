@@ -1,17 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #EAF5FF; /* Light blue background color */
+  background-color: #1E3452; /* Darker blue background color */
   padding: 20px;
   text-align: center;
-  color: #000000; /* Black text color */
+  color: #FFFFFF; /* White text color */
 }
 
 h1 {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 p {
-  color: #333333; /* Dark gray text color */
+  color: #CCCCCC; /* Light gray text color */
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -24,19 +24,18 @@ p {
   color: #FFFFFF;
   text-decoration: none;
   border-radius: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .discord-link:hover {
-  background-color: #FFD700; /* Yellow background color */
-  transform: scale(1.1);
+  background-color: #FFD700; /* Yellow background color on hover */
 }
 
 .twitter-link {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  background-color: #000000;
+  background-color: transparent;
   color: #FFFFFF;
   text-decoration: none;
   border-radius: 5px;
@@ -46,8 +45,7 @@ p {
 }
 
 .twitter-link:hover {
-  background-color: #000000;
-  transform: scale(1.1);
+  background-color: #1DA1F2; /* Twitter blue background color on hover */
 }
 
 .twitter-link::before {
@@ -68,9 +66,14 @@ p {
   transform: scale(1);
 }
 
+.twitter-link:hover ~ body {
+  background-color: #000000; /* Black background color on Twitter button hover */
+  transition: background-color 0.3s ease-in-out;
+}
+
 .twitter-logo {
   width: auto;
-  height: auto;
+  height: 24px;
   vertical-align: middle;
   margin-right: 5px;
 }
