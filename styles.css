@@ -1,26 +1,76 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bonkr's Site</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Welcome to Bonker's site!</h1>
-  
-  <p>Hey there! I am bonker and I made this site for a few links!</p>
-  
-  <div>
-    <a href="https://discord.com/users/829341458724552774" class="discord-link">View my Discord Profile</a>
-  </div>
-  
-  <p>Don't hesitate to reach out, ask questions, or share your thoughts. Let's have some fun and enjoy Discord together!</p>
-  
-  <p>Find me on Twitter:</p>
-  <div>
-    <a href="https://twitter.com/your_username" class="twitter-link">
-      <img src="twitter-logo.png" alt="Twitter Logo" class="twitter-logo">
-      Twitter
-    </a>
-  </div>
-</body>
-</html>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EAF5FF; /* Light blue background color */
+  padding: 20px;
+  text-align: center;
+  color: #000000; /* Black text color */
+}
+
+h1 {
+  color: #000000;
+}
+
+p {
+  color: #333333; /* Dark gray text color */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.discord-link {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #7289DA;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.discord-link:hover {
+  background-color: #4E5D94;
+  transform: scale(1.1);
+}
+
+.twitter-link {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.twitter-link:hover {
+  background-color: #000000;
+  transform: scale(1.1);
+}
+
+.twitter-link::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: radial-gradient(#1DA1F2, transparent);
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.twitter-link:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.twitter-logo {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
