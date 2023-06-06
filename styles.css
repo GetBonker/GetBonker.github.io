@@ -65,3 +65,12 @@ p {
 
 .twitter-link:hover::before {
   opacity: 1;
+  transform: scale(1);
+}
+
+.twitter-logo {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
