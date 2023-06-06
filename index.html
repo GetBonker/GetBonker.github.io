@@ -5,18 +5,18 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #1E3452; /* Darker blue background color */
+      background-color: #EAF5FF; /* Light blue background color */
       padding: 20px;
       text-align: center;
-      color: #FFFFFF; /* White text color */
+      color: #000000; /* Black text color */
     }
     
     h1 {
-      color: #FFFFFF;
+      color: #000000;
     }
     
     p {
-      color: #CCCCCC; /* Light gray text color */
+      color: #333333; /* Dark gray text color */
       line-height: 1.6;
       margin-bottom: 20px;
     }
@@ -29,17 +29,48 @@
       color: #FFFFFF;
       text-decoration: none;
       border-radius: 5px;
+      transition: all 0.3s ease-in-out;
     }
     
     .discord-link:hover {
       background-color: #4E5D94;
+      transform: scale(1.1);
+    }
+    
+    .twitter-link {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #000000;
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+    }
+    
+    .twitter-link:hover {
+      background-color: #000000;
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(29, 161, 242, 0.8);
+    }
+    
+    .twitter-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+      background-image: url("twitter-logo.png"); /* Replace with the path to your Twitter logo image */
+      background-size: cover;
     }
   </style>
 </head>
 <body>
   <h1>Welcome to Bonker's site!</h1>
   
-  <p>Hey there! I am bonker and i made this site for a few links!</p>
+  <p>Hey there! I am bonker and I made this site for a few links!</p>
   
   <div>
     <a href="https://discord.com/users/829341458724552774" class="discord-link">View my Discord Profile</a>
@@ -49,7 +80,10 @@
   
   <p>Find me on Twitter:</p>
   <div>
-    <a href="https://twitter.com/your_username" class="discord-link">Twitter</a>
+    <a href="https://twitter.com/your_username" class="twitter-link">
+      <span class="twitter-logo"></span>
+      Twitter
+    </a>
   </div>
 </body>
 </html>
