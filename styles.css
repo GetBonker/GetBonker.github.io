@@ -2,6 +2,7 @@ body {
   background-color: #222;
   color: #fff;
   font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -22,18 +23,19 @@ p {
 }
 
 .button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #555;
-  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  color: #222;
   text-decoration: none;
   border-radius: 4px;
-  margin: 10px;
+  margin: 10px 0;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .button:hover {
-  background-color: #777;
-  transform: scale(1.1);
-  outline: 2px solid blue;
+  background-color: #eee;
+  transform: scale(1.05);
 }
